@@ -1,0 +1,12 @@
+To install on Ubuntu, do the following:
+
+sudo apt-get install libtry-tiny-perl perl-tk libgtk2-imageview-perl libdevice-serialport-perl libfile-homedir-perl libfile-slurp-perl
+sudo cpanp i Tk::Help Ham::Locator Ham::Resources::Utils
+
+If your system upgrades perl, you will need to run the cpanp line again.
+
+Allow your user ID to access the serial port
+sudo usermod -a -G dialout $USER
+
+Download rotator-control to a directory of your choosing and run
+`chmod 555 rotator-control-dcu-1` to make it executable.
